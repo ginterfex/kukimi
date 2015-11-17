@@ -1,0 +1,66 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "dnsName": {
+      "value": "pxc"
+    },
+    "storageAccount": {
+      "value": "kukimiStorage"
+    },
+    "virtualNetworkName": {
+      "value": "myVNET"
+    },
+    "dbSubnetName": {
+      "value": "Subnet-1"
+    },
+    "vmIP1": {
+      "value": "10.0.0.32"
+    },
+    "vmIP2": {
+      "value": "10.0.0.33"
+    },
+    "vmIP3": {
+      "value": "10.0.0.34"
+    },
+    "userName": {
+      "value": "azureuser"
+    },
+    "password": {
+      "value": "password1"
+    },
+    "vmNamePrefix": {
+      "value": "kukimi-db"
+    }
+    "vmSize": {
+      "value": "Standard_DS3"
+    }
+    "dbSubnetAddressPrefix": {
+      "value": "10.0.0.0/24"
+    }
+    "imagePublisher": {
+      "value": "Canonical"
+    }
+    "imageOffer": {
+      "value": "UbuntuServer"
+    }
+    "imageSKU": {
+      "value": "14.04.3-LTS"
+    }
+    "sshNatRuleFrontEndPort1": {
+      "value": 22101
+    }
+    "sshNatRuleFrontEndPort2": {
+      "value": 22102
+    }
+    "sshNatRuleFrontEndPort3": {
+      "value": 22103
+    }
+    "customScriptFilePath": {
+      "value": "./azurepxc.sh"
+    }
+    "mysqlConfigFilePath": {
+      "value": "./my.cnf.template"
+    }
+  }
+}
